@@ -15,7 +15,6 @@ urlpatterns = [
     path('risk-by-portfolio/', views.RiskByPortfolioView.as_view(), name='risk_by_portfolio'),
     # path('portfolio-heatmap/', views.portfolio_heatmap_view, name='portfolio_heatmap'),
     path('interactive-heatmaps/', views.interactive_heatmap_view, name='interactive_heatmap'),
-        
     path('', admin_site.urls),  # Root URL now points to the custom admin site
     path('admin/', admin.site.urls),  # Default Django admin (fallback)
     path('orm/', admin_site.urls),  # Custom admin site at a different path

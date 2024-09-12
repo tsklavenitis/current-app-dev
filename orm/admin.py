@@ -129,44 +129,6 @@ class CustomAdminSite(admin.AdminSite):
         ]
         return custom_urls + urls
 
-    # def download_risk_score_graph(self, request, risk_id):
-    #     try:
-    #         risk = Risk.objects.get(pk=risk_id)
-    #     except Risk.DoesNotExist:
-    #         return HttpResponse("Risk not found", content_type='text/plain')
-
-    #     inherent_scores = risk.score_history.filter(score_type='inherent').order_by('timestamp')
-    #     residual_scores = risk.score_history.filter(score_type='residual').order_by('timestamp')
-    #     targeted_scores = risk.score_history.filter(score_type='targeted').order_by('timestamp')
-
-    #     dates = [score.timestamp for score in inherent_scores]
-    #     inherent_values = [score.score for score in inherent_scores]
-    #     residual_values = [score.score for score in residual_scores]
-    #     targeted_values = [score.score for score in targeted_scores]
-
-    #     if dates and (inherent_values or residual_values or targeted_values):
-    #         fig, ax = plt.subplots()
-    #         if inherent_values:
-    #             ax.plot(dates, inherent_values, marker='o', label='Inherent Score', color='blue')
-    #         if residual_values:
-    #             ax.plot(dates, residual_values, marker='o', label='Residual Score', color='lightblue')
-    #         if targeted_values:
-    #             ax.plot(dates, targeted_values, marker='o', label='Targeted Score', color='darkblue')
-    #         ax.set_title(f'Score Trends for {risk.title}')
-    #         ax.set_xlabel('Date')
-    #         ax.set_ylabel('Score')
-    #         ax.legend()
-
-    #         buffer = io.BytesIO()
-    #         plt.savefig(buffer, format='png')
-    #         plt.close(fig)
-    #         buffer.seek(0)
-
-    #         response = HttpResponse(buffer.read(), content_type='image/png')
-    #         response['Content-Disposition'] = f'attachment; filename="risk_score_graph_{risk_id}.png"'
-    #         return response
-
-    #     return HttpResponse("No data available", content_type='text/plain')
 
     def change_approval_request(self, request, pk):
         return self.admin_view(self.approval_request_change_view)(request, pk)
@@ -474,18 +436,7 @@ class RiskAdmin(OwnershipAdminMixin, admin.ModelAdmin):
                    'residual_impact', 'targeted_likelihood', 'targeted_impact')
 
     
-    # def save_model(self, request, obj, form, change):
-    #     # Set the created_by field to the current user's UserProfile (if applicable)
-    #     obj.created_by = UserProfile.objects.get(user=request.user)
-        
-    #     # Save the Risk object
-    #     super().save_model(request, obj, form, change)
-        
-    #     # Update the existing RiskScoreHistory records with the user who saved the risk
-    #     score_histories = RiskScoreHistory.objects.filter(risk=obj)
-    #     for history in score_histories:
-    #         # history.saved_by = request.user
-    #         history.save()        
+     
         
     def create_approval_requests(self, request, queryset):
         for risk in queryset:
@@ -837,6 +788,14 @@ admin_site.register(Group, CustomGroupAdmin)
 @admin.register(UserProfile, site=admin_site)
 class UserProfileAdmin(admin.ModelAdmin):
     resource_class = UserProfileResource
+
+AssessmentHistory
+
+@admin.register(AssessmentHistory, site=admin_site)
+class AssessmentHistoryAdmin(admin.ModelAdmin):
+    resource_class = AssessmentHistory
+
+
 
 @admin.register(Portfolio, site=admin_site)
 class PortfolioAdmin(admin.ModelAdmin):
