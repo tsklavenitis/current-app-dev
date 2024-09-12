@@ -376,7 +376,7 @@ def generate_interactive_heatmap(title, data, score_data, risk_type, request):
         cbar=False
     )
 
-    ax.set_title(title, fontsize=12, weight='normal', wrap=True)
+    ax.set_title(title, fontsize=7, weight='normal', wrap=True)
     ax.set_xlabel('Impact', fontsize=10)
     ax.set_ylabel('Likelihood', fontsize=10)
     ax.set_xticklabels(['1', '2', '3', '4', '5'], fontsize=8)
