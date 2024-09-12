@@ -7,7 +7,7 @@ SECRET_KEY = 'your-secret-key'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['avaxermapp-bff56b931fc1.herokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['avaxermappdev-7ff3a524a5eb.herokuapp.com','localhost','127.0.0.1']
 
 INSTALLED_APPS = [
     'tinymce',
@@ -397,7 +397,7 @@ JAZZMIN_SETTINGS = {
     # Whether to link font from fonts.googleapis.com (use custom_css to supply font otherwise)
     "use_google_fonts_cdn": True,
     # Whether to show the UI customizer on the sidebar
-    "show_ui_builder": False,
+    "show_ui_builder": True,
 
     ###############
     # Change view #
