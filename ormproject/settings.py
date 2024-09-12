@@ -437,7 +437,7 @@ JAZZMIN_UI_TWEAKS = {
     "sidebar_fixed": True,
     "sidebar": "sidebar-dark-navy",
     "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
+    "sidebar_disable_expand": True,
     "sidebar_nav_child_indent": False,
     "sidebar_nav_compact_style": False,
     "sidebar_nav_legacy_style": False,
@@ -454,4 +454,3 @@ JAZZMIN_UI_TWEAKS = {
     },
     "actions_sticky_top": True
 }
-
