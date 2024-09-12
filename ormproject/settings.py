@@ -262,13 +262,14 @@ JAZZMIN_SETTINGS = {
     ############
 
     "topmenu_links": [
-        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
+        # {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
 
            # Your custom report links
          # external url that opens in a new window (Permissions can be added)
         {"name": "METABASE", "url": "http://localhost:3000/", "new_window": True},
         {
             "name": "HeatMaps", 
+            "icon": "fas fa-users-cog",
             "url": "interactive_heatmap",  # Ensure this matches the URL name in urls.py
             "permissions": ["orm.view_risk"],
             "new_window": True
@@ -323,6 +324,7 @@ JAZZMIN_SETTINGS = {
 
     # Custom links to append to app groups, keyed on app name
      "custom_links": {
+         
         "orm": [  # Replace with your app's name
              {
                 "name": "HeatMaps", 
@@ -387,7 +389,7 @@ JAZZMIN_SETTINGS = {
     # Related Modal #
     #################
     # Use modals instead of popups
-    "related_modal_active": False,
+    "related_modal_active": True,
 
     #############
     # UI Tweaks #
