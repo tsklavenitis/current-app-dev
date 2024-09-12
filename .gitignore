@@ -1,0 +1,16 @@
+# Αγνοήστε το εικονικό περιβάλλον Python
+.venv/
+
+# Αγνοήστε το φάκελο node_modules (για έργα Node.js)
+node_modules/
+
+# Αγνοήστε αρχεία κατασκευής
+build/
+dist/
+
+# Αγνοήστε αρχεία cache
+*.log
+__pycache__/
+
+# Αγνοήστε ρυθμίσεις IDE
+.vscode/

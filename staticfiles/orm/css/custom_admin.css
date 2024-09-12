@@ -1,0 +1,184 @@
+.inline-group  p {
+    display: none !important; /* This hides the object labels inside <p> tags */
+}
+
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-userprofile p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Διασφάλιση ίδιου πλάτους για τις περιγραφές (formatted HTML) */
+<<<<<<< HEAD
+.inline-group .field-mitigation p ,
+.inline-group .field-action p,
+.inline-group .field-indicator p ,
+.inline-group .field-event  p,
+.inline-group .field-procedure p  
+  {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Διασφάλιση ίδιου πλάτους για τις περιγραφές (formatted HTML) */
+.inline-group .field-mitigation ,
+.inline-group .field-action ,
+.inline-group .field-indicator  ,
+.inline-group .field-event  ,
+.inline-group .field-procedure   
+  {
+    width: 100%; /* Ίδιο πλάτος για τα πεδία περιγραφής */
+    box-sizing: border-box; /* Συμπερίληψη padding/border στο πλάτος */
+    display: block; /* Εμφάνιση των στοιχείων σε δύο στήλες */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-formatted_description p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+
+/* Ensure that the font supports Greek characters and is rendered correctly */
+.readonly {
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Replace with a font that supports Greek characters */
+    font-size: 16px; /* Ensure the font size is adequate for readability */
+    line-height: 1.5; /* Adjust line height for better readability */
+    white-space: pre-wrap; /* Preserve white spaces and line breaks */
+}
+
+/* Additional CSS for text rendering optimization */
+.readonly {
+    -webkit-font-smoothing: antialiased; /* Improve text rendering on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Improve text rendering on Firefox */
+    color: #333; /* Ensure the text color contrasts well with the background */
+}
+=======
+.inline-group .field-mitigation  ,
+.inline-group .field-action ,
+.inline-group .field-indicator ,
+.inline-group .field-event  ,
+.inline-group .field-procedure  
+  {
+    width: 100%; /* Ίδιο πλάτος για τα πεδία περιγραφής */
+    box-sizing: border-box; /* Συμπερίληψη padding/border στο πλάτος */
+    display: block; /* Εμφάνιση των στοιχείων σε δύο στήλες */
+}
+
+.form-row.field-assessment_history_display {
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    padding: 10px;
+}
+
+.django-ckeditor-widget{
+    max-height: none;  /* Δεν περιορίζει το ύψος του container */
+    height: 100%;      /* Το ύψος του container προσαρμόζεται αυτόματα */
+    width: 100%;
+    padding: 0; /* Αφαιρέστε οποιαδήποτε padding */
+    box-sizing: border-box; /* Συμπεριλάβετε το padding και το border στο πλάτος */
+}
+
+
+
+
+
+>>>>>>> 5f8e362332a99f04994da4425ce3e6ad617ddb96
+
+
+
+
+.form-row.field-assessment_history_display {
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    padding: 10px;
+}
+
+.django-ckeditor-widget{
+    max-height: none;  /* Δεν περιορίζει το ύψος του container */
+    height: 100%;      /* Το ύψος του container προσαρμόζεται αυτόματα */
+    width: 100%;
+    padding: 0; /* Αφαιρέστε οποιαδήποτε padding */
+    box-sizing: border-box; /* Συμπεριλάβετε το padding και το border στο πλάτος */
+}
+
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-score p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-score_type p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-score p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-timestamp p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-user p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-status p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-response_date p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+/* Ensure the <p> tags within inline fields are always visible */
+.inline-group .field-risk p {
+    display: block !important; /* Ensure the <p> tag is displayed as a block */
+    visibility: visible !important; /* Ensure the <p> tag is visible */
+}
+
+
+
+
+/* General styling for the Risk Scoring fields */
+.form-row.field-inherent_likelihood,
+.form-row.field-inherent_impact,
+.form-row.field-inherent_score_display,
+.form-row.field-residual_likelihood,
+.form-row.field-residual_impact,
+.form-row.field-residual_score_display,
+.form-row.field-targeted_likelihood,
+.form-row.field-targeted_impact,
+.form-row.field-targeted_score_display {
+    display: inline-block;
+    width: 32%; /* Consistent width for all fields */
+    margin-right: 1%; /* Space between fields */
+    vertical-align: top; /* Align fields at the top */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: left;
+}
+
+/* Additional styling for ensuring visibility in read-only mode */
+.field-readonly {
+    display: block !important; /* Ensure readonly fields are shown */
+    opacity: 1 !important; /* Full opacity to ensure visibility */
+}

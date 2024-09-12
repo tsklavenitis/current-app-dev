@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approval Rejection</title>
+</head>
+<body>
+    <p>Hello {{ user.get_full_name }},</p>
+    <p>The approval request for the following risk has been rejected:</p>
+    <p>
+        <strong>Risk Title:</strong> {{ risk.title }}<br>
+        <strong>Rejected By:</strong> {{ rejecting_user.get_full_name }}
+    </p>
+    <p>Thank you,<br>ORM Admin</p>
+</body>
+</html>

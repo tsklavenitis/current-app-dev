@@ -1,0 +1,22 @@
+/* Προσαρμοσμένο CSS για το Django admin */
+
+.field-inherent_likelihood,
+.field-inherent_impact,
+.field-inherent_score_display,
+.field-residual_likelihood,
+.field-residual_impact,
+.field-residual_score_display,
+.field-targeted_likelihood,
+.field-targeted_impact,
+.field-targeted_score_display {
+    display: inline-block;
+    width: 30%;
+    margin-right: 10px;
+}
+
+/* Βεβαιωθείτε ότι τα πεδία δεν είναι υπερβολικά μεγάλα */
+.field-inherent_score_display,
+.field-residual_score_display,
+.field-targeted_score_display {
+    width: 20%;
+}

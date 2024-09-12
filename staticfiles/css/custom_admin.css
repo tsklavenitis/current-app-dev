@@ -1,0 +1,53 @@
+/* custom_admin.css */
+body, table, input, select, textarea, .module, .module caption, h1, h2, h3, h4, h5, h6, .colM a {
+    font-family: Tahoma, sans-serif;
+}
+.nav-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #B22222; /* Firebrick red background */
+    padding: 10px;
+}
+.nav-sidebar li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.nav-sidebar li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-sidebar li a:hover {
+    text-decoration: underline;
+}
+.nav-sidebar .group-title {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #8B0000; /* Dark Red */
+}
+.inline-group h3 {
+    background-color: #B22222; /* Firebrick red background */
+    color: #FFFFFF; /* White text */
+    padding: 10px;
+    font-weight: bold;
+}
+.print-button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #B22222;
+    border: none;
+    cursor: pointer;
+}
+.toggle-filters {
+    cursor: pointer;
+    background-color: #B22222;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    border: none;
+    font-weight: bold;
+}

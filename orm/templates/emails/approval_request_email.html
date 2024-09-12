@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Approval Request</title>
+</head>
+<body>
+    <p>Hello {{ user.get_full_name }},</p>
+    <p>You have a new approval request for the following risk:</p>
+    <p>
+        <strong>Risk Title:</strong> {{ risk.title }}<br>
+        <strong>Description:</strong> {{ risk.description }}<br>
+        <strong>Requested By:</strong> {{ requesting_user.get_full_name }}
+    </p>
+    <p>Please review and approve or reject the request using the following link:</p>
+    <p><a href="{{ approval_link }}">Approve/Reject Request</a></p>
+    <p>Thank you,<br>ORM Admin</p>
+</body>
+</html>
