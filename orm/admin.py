@@ -523,7 +523,7 @@ class RiskAdmin(OwnershipAdminMixin, admin.ModelAdmin):
             if targeted_values:
                 sns.lineplot(x=dates, y=targeted_values, marker='o', label='Targeted Score', color=self.SCORE_COLORS['targeted'])
 
-            plt.title(f'Score Trends for {obj.title}', fontsize=12, weight='normal')  # Consistent title weight
+            plt.title(f'Score Trends for {obj.title}', fontsize=7,wrap=True,weight='normal')  # Consistent title weight
             plt.xlabel('Date', fontsize=10)
             plt.ylabel('Score', fontsize=10)
             plt.xticks(fontsize=8)
@@ -582,7 +582,7 @@ class RiskAdmin(OwnershipAdminMixin, admin.ModelAdmin):
         cmap = sns.color_palette([risk_color(i) for i in range(1, 26)])
 
         ax = sns.heatmap(heatmap_data, annot=True, cmap=cmap, fmt="d", linewidths=.5, cbar=False)
-        ax.set_title(f'Risk Heatmap for {obj.title}', fontsize=12, weight='normal')  # Consistent title weight
+        ax.set_title(f'Risk Heatmap for {obj.title}', fontsize=7, wrap=True, weight='normal')  # Consistent title weight
         ax.set_xlabel('Impact', fontsize=10)
         ax.set_ylabel('Likelihood', fontsize=10)
         ax.set_xticklabels(['1', '2', '3', '4', '5'], fontsize=8)
