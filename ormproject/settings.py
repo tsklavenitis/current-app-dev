@@ -23,8 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'orm',
     'import_export',
-    'ckeditor',
-    'ckeditor_uploader',
+    # 'ckeditor',
+    # 'ckeditor_uploader',
     'django_select2', 
 ]
 
@@ -266,7 +266,7 @@ JAZZMIN_SETTINGS = {
 
            # Your custom report links
          # external url that opens in a new window (Permissions can be added)
-        {"name": "METABASE", "url": "http://localhost:3000/", "new_window": True},
+        {"name": "METABASE", "url": "https://metabase-a36x.onrender.com", "new_window": True},
         {
             "name": "HeatMaps", 
             "icon": "fas fa-users-cog",
