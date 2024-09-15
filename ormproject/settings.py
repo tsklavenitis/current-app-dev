@@ -332,30 +332,32 @@ JAZZMIN_SETTINGS = {
                 "icon": "fas fa-chart-pie",  # Optional: Add an icon
                 "permissions": ["orm.view_risk"]
             },
+            {"name": "METABASE", "url": "https://metabase-a36x.onrender.com", "icon": "fas fa-chart-pie","new_window": True},
+
             #  {
             #     "name": "Portfolios HeatMaps", 
             #     "url": "portfolio_heatmap",  # URL name must match the one in urls.py
             #     "icon": "fas fa-chart-pie",  # Optional: Add an icon
             #     "permissions": ["orm.view_risk"]
             # },
-            {
-                "name": "Portfolios View", 
-                "url": "risk_by_portfolio",  # URL name must match the one in urls.py
-                "icon": "fas fa-chart-pie",  # Optional: Add an icon
-                "permissions": ["orm.view_risk"]
-            },
-            {
-                "name": "Categories View", 
-                "url": "risk_category_charts",  # URL name must match the one in urls.py
-                "icon": "fas fa-chart-pie",  # Optional: Add an icon
-                "permissions": ["orm.view_risk"]
-            },
-            {
-                "name": "Risk Detail Report", 
-                "url": "risk_detail_report",  # URL name must match the one in urls.py
-                "icon": "fas fa-file-alt",  # Optional: Add an icon
-                "permissions": ["orm.view_risk"]
-            },
+            # {
+            #     "name": "Portfolios View", 
+            #     "url": "risk_by_portfolio",  # URL name must match the one in urls.py
+            #     "icon": "fas fa-chart-pie",  # Optional: Add an icon
+            #     "permissions": ["orm.view_risk"]
+            # },
+            # {
+            #     "name": "Categories View", 
+            #     "url": "risk_category_charts",  # URL name must match the one in urls.py
+            #     "icon": "fas fa-chart-pie",  # Optional: Add an icon
+            #     "permissions": ["orm.view_risk"]
+            # },
+            # {
+            #     "name": "Risk Detail Report", 
+            #     "url": "risk_detail_report",  # URL name must match the one in urls.py
+            #     "icon": "fas fa-file-alt",  # Optional: Add an icon
+            #     "permissions": ["orm.view_risk"]
+            # },
         ],
     },
 
