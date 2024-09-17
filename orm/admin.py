@@ -788,8 +788,8 @@ admin_site.register(Group, CustomGroupAdmin)
 @admin.register(UserProfile, site=admin_site)
 class UserProfileAdmin(admin.ModelAdmin):
     resource_class = UserProfileResource
+    list_display = ('role', 'user')
 
-AssessmentHistory
 
 @admin.register(AssessmentHistory, site=admin_site)
 class AssessmentHistoryAdmin(admin.ModelAdmin):
