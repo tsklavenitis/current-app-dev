@@ -384,11 +384,11 @@ def generate_interactive_heatmap(title, data, score_data, risk_type, request):
 
     for i in range(5):
         for j in range(5):
-            score = score_data[::-1][i][j]  # Use reversed score_data
             count = len(data[::-1][i][j])  # Use reversed data for counting risks
             if count > 0:
-                ax.text(j + 0.5, i + 0.5, f'{score}\n({count})', 
+                ax.text(j + 0.5, i + 0.5, f'{count}', 
                         ha='center', va='center', color='black', fontsize=10, weight='bold')
+
 
     buffer = io.BytesIO()
     plt.savefig(buffer, format='png')
